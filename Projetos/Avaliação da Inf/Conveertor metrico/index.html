@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades de Comprimento</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Unidades de Comprimento</h1>
+        <form id="converter-form">
+            <label for="meters">Distância em metros:</label>
+            <input type="number" id="meters" name="meters" required>
+            <label for="unit">Converter para:</label>
+            <select id="unit" name="unit">
+                <option value="yards">Jarda</option>
+                <option value="feet">Pé</option>
+                <option value="inches">Polegada</option>
+                <option value="miles">Milha</option>
+            </select>
+            <button type="button" onclick="convert()">Converter</button>
+        </form>
+        <p id="result"></p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

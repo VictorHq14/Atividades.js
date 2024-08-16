@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega's Bloguers </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <body>
+        <div class="container">
+            <h1>Mega's Blogueiros</h1>
+            <div class="post-list" id="postList">
+                <h2>Postagens</h2>
+            </div>
+            <div class="post-detail" id="postDetail" style="display:none;">
+                <div class="post-detail-content" id="postContent"></div>
+                <div class="comments" id="commentsSection">
+                    <h3>Comentários</h3>
+                    <div id="commentsList"></div>
+                    <div class="comment-form">
+                        <h4>Adicionar Comentário</h4>
+                        <input type="text" id="commentAuthor" placeholder="Seu nome">
+                        <textarea id="commentText" placeholder="Seu comentário"></textarea>
+                        <button onclick="addComment()">Adicionar Comentário</button>
+                    </div>
+                </div>
+            </div>
+        <div class="add-post">
+            <h2>Adicionar Nova Postagem</h2>
+            <input type="text" id="newPostTitle" placeholder="Título">
+            <textarea id="newPostContent" placeholder="Conteúdo"></textarea>
+            <button onclick="addPost()">Adicionar Postagem</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    </body>
+</html>
